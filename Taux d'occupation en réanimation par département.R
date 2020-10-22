@@ -45,8 +45,8 @@ ggplot(données %>% slice_head(n = 9), aes(x = date, y = taux)) +
   labs(caption = "Source : Santé Publique France - Graphique par Philippe Lemoine (@phl43)") +
   ggsave(
     "Évolution du taux d'occupation des lits en réanimation par des patients atteint du COVID-19 - 1.png",
-    width = 12,
-    height = 18,
+    width = 18,
+    height = 12,
     limitsize = FALSE
     )
 
@@ -69,7 +69,7 @@ ggplot(données %>% slice_tail(n = 9), aes(x = date, y = taux)) +
   labs(caption = "Source : Santé Publique France - Graphique par Philippe Lemoine (@phl43)") +
   ggsave(
     "Évolution du taux d'occupation des lits en réanimation par des patients atteint du COVID-19 - 2.png",
-    width = 12,
-    height = 18,
+    width = 18,
+    height = 12,
     limitsize = FALSE
   )
